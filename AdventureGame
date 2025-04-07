@@ -152,12 +152,12 @@ public class AdventureGame {
                         System.out.println("You decide to head to the library now, remembering the squid, pet they have.");
                         System.out.println("You find the squid but no obvious door. You search around.");
                         System.out.println("You notice a loose stone. Do you:");
-                        //playMusic("decision_music_6.wav", true); // Music for the fourth decision (alley path)
+                        playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Bendy-Boing Wonder (Alternate Mix) - Super Mario Bros. Wonder.wav", true); // Music for the fourth decision (alley path)
                         System.out.println("(K) Push the stone");
                         System.out.println("(L) Go home, thinking you've found all there is to find like a LOSER.");
 
                         String fourthChoiceAlley = inputReader.nextLine().toUpperCase();
-                        //stopCurrentMusic();
+                        stopCurrentMusic();
 
                         if (fourthChoiceAlley.equals("K")) {
                             System.out.println("\nThe stone clicks! A hidden door opens.");
@@ -172,9 +172,9 @@ public class AdventureGame {
                                 System.out.println("**LOSE ENDING: Found a secret door but lacked the key.**");
                             }
                         } else if (fourthChoiceAlley.equals("L")) {
-                            //playMusic("secret_ending_music.wav", false); // One-time secret ending music
-                            System.out.println("\nYou go home, satisfied with finding the key but unaware of the hidden door.");
-                            System.out.println("**SECRET ENDING: Found a piece of the puzzle but missed the bigger picture.**");
+                            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time secret ending music
+                            System.out.println("\nYou go home, satisfied with finding the key but unaware of the hidden door, thus finding Kesha and she blasts her music at you, the decibles of music destoying your ears.");
+                            System.out.println("**SECRET ENDING: Found a piece of the puzzle but missed the bigger picture, so Kesha punished your ignorance.**");
                         } else {
                             System.out.println("Invalid choice. The End.");
                         }
