@@ -1,0 +1,275 @@
+ import java.util.Scanner;
+
+
+
+public class AdventureGame {
+
+
+
+public static void main(String[] args) {
+
+Scanner inputReader = new Scanner(System.in);
+
+
+
+boolean hasKey = false;
+
+
+
+System.out.println("You're a student. AT WECIB. You wish your life was less... boring.");
+
+System.out.println("As you pass room 255...");
+
+
+
+// Pause for 3 seconds (3000 milliseconds)
+
+try {
+
+Thread.sleep(3000);
+
+} catch (InterruptedException e) {
+
+// If the sleep is interrupted, we print the stack trace for debugging
+
+e.printStackTrace();
+
+// It's also good practice to re-interrupt the current thread
+
+Thread.currentThread().interrupt();
+
+}
+
+System.out.println("\n");
+
+System.out.println("...you see a note.");
+
+System.out.println("What do you do?");
+
+System.out.println("(A) Open the note");
+
+System.out.println("(B) Keep walking");
+
+
+
+String firstChoice = inputReader.nextLine().toUpperCase();
+
+
+
+if (firstChoice.equals("A")) {
+
+System.out.println("\nThe note says: 'Seek the hidden door where the stone bird sings. A key lies near the whispering wind.'");
+
+System.out.println("What do you do now?");
+
+System.out.println("(C) What... brina fried from class... uhhh Self combust");
+
+System.out.println("(D) Try and follow the note?");
+
+
+
+String secondChoice = inputReader.nextLine().toUpperCase();
+
+
+
+if (secondChoice.equals("C")) {
+
+System.out.println("\nYou just explode, the explosion causing America to think they got hit by a nuclear blast. This would have led to a world war, if Goku didnt show up and proceed to solo everyone alive.");
+
+System.out.println("**LOSE ENDING: Ignored the call to adventure, thus sending the earth into WW3 and Goku showing up to fight whats left of humanity.**");
+
+} else if (secondChoice.equals("D")) {
+
+System.out.println("\nYou remember the stone bird at the library near RTP 1 and a windy alley nearby.");
+
+System.out.println("What do you do next?");
+
+System.out.println("(E) Go to the library");
+
+System.out.println("(F) Check the windy alley first");
+
+
+
+String thirdChoice = inputReader.nextLine().toUpperCase();
+
+
+
+if (thirdChoice.equals("E")) {
+
+System.out.println("\nYou walk to the library. You find the stone bird but no obvious door. You search around.");
+
+System.out.println("You notice a loose stone. Do you:");
+
+System.out.println("(G) Push the stone");
+
+System.out.println("(H) Call for help.");
+
+
+
+String fourthChoiceLibrary = inputReader.nextLine().toUpperCase();
+
+
+
+if (fourthChoiceLibrary.equals("G")) {
+
+System.out.println("\nThe stone clicks! A hidden door opens.");
+
+System.out.println("Inside, you find a dusty old key on a pedestal.");
+
+System.out.println("You take the key.");
+
+hasKey = true;
+
+System.out.println("You step back outside.");
+
+System.out.println("What now?");
+
+System.out.println("(I) Go home with your discovery");
+
+System.out.println("(J) Try to find where the key goes");
+
+
+
+String fifthChoiceLibrary = inputReader.nextLine().toUpperCase();
+
+
+
+if (fifthChoiceLibrary.equals("I")) {
+
+System.out.println("\nYou call for help. But nobody came.");
+
+System.out.println("**NEUTRAL ENDING: Is... is that an undertale reference?!?!?!?.**");
+
+} else if (fifthChoiceLibrary.equals("J")) {
+
+System.out.println("\nYou wander around the library, looking for a lock that fits the key.");
+
+System.out.println("Behind a bookshelf in a quiet corner, you find a small, ornate door.");
+
+if (hasKey) {
+
+System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with a bajillion dollar");
+
+System.out.println("**WIN ENDING: Solved the mystery and found a treasure! MONEY YIPEEEEEE**");
+
+} else {
+
+System.out.println("\nYou try to open the ornate door, but it's locked.");
+
+System.out.println("**LOSE ENDING: Found a secret door but lacked the key.**");
+
+}
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+
+
+} else if (fourthChoiceLibrary.equals("H")) {
+
+System.out.println("\nYou give up and head home, wondering what lay behind the stone.");
+
+System.out.println("**LOSE ENDING: Gave up too easily.**");
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+
+
+} else if (thirdChoice.equals("F")) {
+
+System.out.println("\nYou check the windy alley. Amidst the swirling leaves, you find a small, shiny key hidden beneath a loose brick.");
+
+System.out.println("You pocket the key.");
+
+hasKey = true;
+
+System.out.println("You decide to head to the library now, remembering the stone bird.");
+
+System.out.println("You find the stone bird but no obvious door. You search around.");
+
+System.out.println("You notice a loose stone. Do you:");
+
+System.out.println("(K) Push the stone");
+
+System.out.println("(L) Go home, thinking you've found all there is to find");
+
+
+
+String fourthChoiceAlley = inputReader.nextLine().toUpperCase();
+
+
+
+if (fourthChoiceAlley.equals("K")) {
+
+System.out.println("\nThe stone clicks! A hidden door opens.");
+
+System.out.println("Inside, you see a small, ornate door.");
+
+if (hasKey) {
+
+System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with ancient scrolls.");
+
+System.out.println("**WIN ENDING: Found the key in an unexpected place and solved the mystery!**");
+
+} else {
+
+System.out.println("\nYou try to open the ornate door, but it's locked.");
+
+System.out.println("**LOSE ENDING: Found a secret door but lacked the key.**");
+
+}
+
+} else if (fourthChoiceAlley.equals("L")) {
+
+System.out.println("\nYou go home, satisfied with finding the key but unaware of the hidden door.");
+
+System.out.println("**SECRET ENDING: Found a piece of the puzzle but missed the bigger picture.**");
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+
+
+} else if (firstChoice.equals("B")) {
+
+System.out.println("\nYou keep walking home, oblivious to the mystery unfolding nearby.Then, you meet the principal at a Wendys, and get suspended for skipping class..");
+
+System.out.println("**LOSE ENDING: Missed the opportunity entirely, and proceeded to have the worst luck possible.**");
+
+} else {
+
+System.out.println("Invalid choice. The End.");
+
+}
+
+
+
+inputReader.close();
+
+}
+
+}
