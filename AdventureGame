@@ -94,16 +94,28 @@ public class AdventureGame {
 
                     if (thirdChoice.equals("E")) {
                         System.out.println("\nYou walk to the library. You find the squid but no obvious door. You search around.");
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            Thread.currentThread().interrupt();
+                        }
                         System.out.println("You notice a loose stone. Do you:");
                         //playMusic("decision_music_4.wav", true); // Music for the fourth decision (library)
-                        System.out.println("(G) Push the stone");
-                        System.out.println("(H) Call for help.");
+                        System.out.println("(G) Push the stone, maybe its a squid game reference?");
+                        System.out.println("(H) Call for help. Like Undertale?!?!?!?");
 
                         String fourthChoiceLibrary = inputReader.nextLine().toUpperCase();
                         //stopCurrentMusic();
 
                         if (fourthChoiceLibrary.equals("G")) {
-                            System.out.println("\nThe stone clicks! A hidden door opens.");
+                            System.out.println("\nThe stone clicks! WOAW! A hidden door opens.");
+                            try {
+                                Thread.sleep(1500);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                                Thread.currentThread().interrupt();
+                            }
                             System.out.println("Inside, you find a dusty old key on a pedestal.");
                             System.out.println("You take the key.");
                             hasKey = true;
@@ -118,7 +130,14 @@ public class AdventureGame {
 
                             if (fifthChoiceLibrary.equals("I")) {
                                 //playMusic("neutral_music.wav", false); // One-time neutral music
-                                System.out.println("\nYou call for help. But nobody came.");
+                                System.out.println("\nYou call for help... Wait.... Waiting....");
+                                try {
+                                    Thread.sleep(6000);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                    Thread.currentThread().interrupt();
+                                }
+                                System.out.println("\nBut nobody came.");
                                 System.out.println("**NEUTRAL ENDING: Is... is that an undertale reference?!?!?!?.**");
                             } else if (fifthChoiceLibrary.equals("J")) {
                                 System.out.println("\nYou wander around the library, looking for a lock that fits the key.");
