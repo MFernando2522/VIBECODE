@@ -180,7 +180,7 @@ public class AdventureGame {
                     System.out.println("Invalid choice. The End.");
                 }
             } else if (firstChoice.equals("B")) {
-                //playMusic("lose_music.wav", false); // One-time lose music
+                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Monkeys' Maze (OST Mix) - EarthBound.wav", false); // One-time lose music
                 System.out.println("\nYou keep walking home, oblivious to the mystery unfolding nearby.Then, you meet the principal at a Wendys, and get suspended for skipping class..");
                 System.out.println("**LOSE ENDING: Missed the opportunity entirely, and proceeded to have the worst luck possible.**");
             } else {
