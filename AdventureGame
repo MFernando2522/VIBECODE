@@ -70,14 +70,21 @@ public class AdventureGame {
                 System.out.println("(D) Some game? Like... a squid, game?");
 
                 String secondChoice = inputReader.nextLine().toUpperCase();
-                stopCurrentMusic();
 
                 if (secondChoice.equals("C")) {
+                    stopCurrentMusic();
                     playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time lose music
                     System.out.println("\nYou just explode, the explosion causing America to think they got hit by a nuclear blast. Kesha proceeded to hack the news and play her songs. ");
                     System.out.println("**LOSE ENDING: Ignored the call to adventure, thus sending the earth into WW3 and Kesha showing up to play her songs.**");
                 } else if (secondChoice.equals("D")) {
                     System.out.println("\nYou remember the stone bird at the library near RTP 1 and a windy alley nearby.");
+                    //2 second wait
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                        Thread.currentThread().interrupt();
+                    }
                     System.out.println("What do you do next?");
                     //playMusic("decision_music_3.wav", true); // Music for the third decision
                     System.out.println("(E) Go to the library");
