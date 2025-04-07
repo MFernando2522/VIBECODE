@@ -1,0 +1,90 @@
+===========================
+AdventureGame - Deployment Guide
+===========================
+
+Project Summary:
+----------------
+AdventureGame is a humorous, interactive, text-based Java game. It plays sound effects and background music using .wav files, leading the player through silly and unexpected story branches, ultimately ending in win, lose, neutral, or secret endings.
+
+===========================
+System Requirements:
+===========================
+- OS: Windows 10 or newer (due to file path formatting)
+- Java: JDK 8 or higher
+- Audio: Support for .wav playback via Java Sound API
+
+===========================
+Dependencies:
+===========================
+- Uses standard Java libraries:
+    java.util.Scanner
+    javax.sound.sampled.*
+    java.io.File
+    java.io.IOException
+
+No external libraries required.
+
+===========================
+Project File Structure:
+===========================
+
+AdventureGame/
+│
+├── src/
+│   ├── AdventureGame.java
+│   └── *.wav (audio files listed below)
+│
+└── README.txt (optional)
+
+Place the following .wav files inside the `src/` folder:
+    - DokiDoki.wav
+    - funnySquidGameMusic.wav
+    - The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav
+    - Okay, Everyone! (Natsuki) (Act 2) - Doki Doki Literature Club!.wav
+    - Game Over Yeah!.wav
+    - Hooray! Sound Effect.wav
+    - Bendy-Boing Wonder (Alternate Mix) - Super Mario Bros. Wonder.wav
+    - The Monkeys' Maze (OST Mix) - EarthBound.wav
+
+===========================
+How to Run the Game:
+===========================
+
+OPTION 1: Run in IntelliJ or other IDE:
+---------------------------------------
+1. Open your IDE and create a new Java project.
+2. Add the .wav files in the `src` directory.
+3. Paste AdventureGame.java inside the same folder.
+4. Update the file paths if your user directory differs.
+5. Press Run or right-click main() and run it.
+
+OPTION 2: Compile & Run from Terminal:
+--------------------------------------
+1. Open Command Prompt and navigate to the src folder:
+   cd path\to\AdventureGame\src
+
+2. Compile the program:
+   javac AdventureGame.java
+
+3. Run it:
+   java AdventureGame
+
+Make sure audio permissions and Java sound playback work on your machine.
+
+===========================
+Troubleshooting:
+===========================
+- Audio not playing?
+    * Make sure the .wav files are valid (PCM encoding recommended).
+    * Check if the file paths are correct.
+- FileNotFoundException or UnsupportedAudioFileException?
+    * Verify .wav file is present and the path matches.
+- Using Linux/Mac?
+    * Change the music file paths to match your OS format.
+===========================
+Replay Value: HIGH
+Humor Level: Absurd
+Meme Factor: Certified 
+===========================
+
+Created with love, memes, and squid games.
