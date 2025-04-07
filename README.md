@@ -17,6 +17,9 @@ Adding my songs to this, it was so funny LOL
 What’s one thing you’d improve with more time?
 If I had more time, id definetley add more story to this short adventure and way way more songs. 
 
+
+See the [DEPLOYMENT.txt](DEPLOYMENT.txt) for installation and setup instructions.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
