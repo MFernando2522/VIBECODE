@@ -86,7 +86,6 @@ public class AdventureGame {
                         Thread.currentThread().interrupt();
                     }
                     System.out.println("What do you do next?");
-                    //playMusic("decision_music_3.wav", true); // Music for the third decision
                     System.out.println("(E) Go to the library");
                     System.out.println("(F) Check the windy alley first");
 
@@ -125,7 +124,7 @@ public class AdventureGame {
                                 System.out.println("\nYou wander around the library, looking for a lock that fits the key.");
                                 System.out.println("Behind a bookshelf in a quiet corner, you find a small, ornate door.");
                                 if (hasKey) {
-                                    //playMusic("win_music.wav", false); // One-time win music
+                                    playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Hooray! Sound Effect.wav", false); // One-time win music
                                     System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with a bajillion dollar");
                                     System.out.println("**WIN ENDING: Solved the mystery and found a treasure! MONEY YIPEEEEEE**");
                                 } else {
@@ -163,7 +162,7 @@ public class AdventureGame {
                             System.out.println("\nThe stone clicks! A hidden door opens.");
                             System.out.println("Inside, you see a small, ornate door.");
                             if (hasKey) {
-                                //playMusic("win_music.wav", false); // One-time win music
+                                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Hooray! Sound Effect.wav", false); // One-time win music
                                 System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with ancient scrolls.");
                                 System.out.println("**WIN ENDING: Found the key in an unexpected place and solved the mystery!**");
                             } else {
