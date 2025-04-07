@@ -44,7 +44,7 @@ public class AdventureGame {
         while (playAgain) {
             boolean hasKey = false;
             System.out.println("You're a student. AT WECIB. You wish your life was less... boring.");
-            //playMusic("", true); // Looping background music for school
+            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\DokiDoki.wav", true); // Looping background music for school
             System.out.println("As you pass room 255...");
 
             try {
@@ -60,7 +60,7 @@ public class AdventureGame {
             System.out.println("(B) Keep walking");
 
             String firstChoice = inputReader.nextLine().toUpperCase();
-            //stopCurrentMusic(); // Stop the decision music after the choice
+            stopCurrentMusic(); // Stop the decision music after the choice
 
             if (firstChoice.equals("A")) {
                 System.out.println("\nThe note says: 'Are you ready to play, some sort of calamari game? Find a squid then a door.'");
