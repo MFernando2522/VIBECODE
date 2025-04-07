@@ -77,7 +77,7 @@ public class AdventureGame {
                     System.out.println("\nYou just explode, the explosion causing America to think they got hit by a nuclear blast. Kesha proceeded to hack the news and play her songs. ");
                     System.out.println("**LOSE ENDING: Ignored the call to adventure, thus sending the earth into WW3 and Kesha showing up to play her songs.**");
                 } else if (secondChoice.equals("D")) {
-                    System.out.println("\nYou remember the stone bird at the library near RTP 1 and a windy alley nearby.");
+                    System.out.println("\nYou remember the squid at the library near RTP 1 and a windy alley nearby.");
                     //2 second wait
                     try {
                         Thread.sleep(2000);
