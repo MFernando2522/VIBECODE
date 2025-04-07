@@ -129,18 +129,18 @@ public class AdventureGame {
                                     System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with a bajillion dollar");
                                     System.out.println("**WIN ENDING: Solved the mystery and found a treasure! MONEY YIPEEEEEE**");
                                 } else {
-                                    //playMusic("lose_music.wav", false); // One-time lose music
+                                    playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time lose music
                                     System.out.println("\nYou try to open the ornate door, but it's locked.");
-                                    System.out.println("**LOSE ENDING: Found a secret door but lacked the squid game key.**");
+                                    System.out.println("**LOSE ENDING: Found a secret door but lacked the squid game key. How you gonna open a door you cant cause ...locked???**");
                                 }
                             } else {
                                 System.out.println("Invalid choice. The End.");
                             }
 
                         } else if (fourthChoiceLibrary.equals("H")) {
-                            //playMusic("lose_music.wav", false); // One-time lose music
+                            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time lose music
                             System.out.println("\nYou give up and head home, wondering what lay behind the stone.");
-                            System.out.println("**LOSE ENDING: Gave up too easily.**");
+                            System.out.println("**LOSE ENDING: Gave up too easily. What a quitter.**");
                         } else {
                             System.out.println("Invalid choice. The End.");
                         }
@@ -167,7 +167,7 @@ public class AdventureGame {
                                 System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with ancient scrolls.");
                                 System.out.println("**WIN ENDING: Found the key in an unexpected place and solved the mystery!**");
                             } else {
-                                //playMusic("lose_music.wav", false); // One-time lose music
+                                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time lose music
                                 System.out.println("\nYou try to open the ornate door, but it's locked.");
                                 System.out.println("**LOSE ENDING: Found a secret door but lacked the key.**");
                             }
