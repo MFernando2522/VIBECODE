@@ -44,7 +44,7 @@ public class AdventureGame {
         while (playAgain) {
             boolean hasKey = false;
             System.out.println("You're a student. AT WECIB. You wish your life was less... boring.");
-            playMusic(src\\DokiDoki.wav", true); // Looping background music for school
+            playMusic("src\\DokiDoki.wav", true); // Looping background music for school
             System.out.println("As you pass room 255...");
 
             try {
