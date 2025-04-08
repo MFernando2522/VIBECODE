@@ -21,10 +21,10 @@ If I had more time, id definetley add more story to this short adventure and way
 See the [deployment.txt](deployment.txt) for installation and setup instructions. (Click the Blue text)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# PLEASE READ BELOW: HOW TO RUN THE GAME
 
 # VIBECODE
-#HOW TO RUN GAME: USE INTELLIJ
+#HOW TO RUN GAME: USE INTELLIJ 
 
 #Make sure the files are in the same folder before running!
 
@@ -43,7 +43,7 @@ Do this for ALL sound files for it to run. My apologies!
 
 ------------------------------------------------------------------------
 HOW TO PLAY GAME:
-1. Run file AdventureGame (ensuring files are in same directory)
+1. Run file AdventureGame, after making sure its called AdventureGame.java (ensuring files are in same directory and initalized correctly)
 2. Type ONLY the letter given to choose a choice
    NOTE that IF you dont put down the letter out of the choices given you WILL lose automatically lmao
 4. When game over or ending won, please select Y or N to continue playing or to leave game.
