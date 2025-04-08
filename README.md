@@ -24,7 +24,7 @@ See the [deployment.txt](deployment.txt) for installation and setup instructions
 
 
 # VIBECODE
-#HOW TO RUN GAME:
+#HOW TO RUN GAME: USE INTELLIJ
 
 #Make sure the files are in the same folder before running!
 
@@ -35,7 +35,7 @@ FOR EXAMPLE: if you see a file path called:
 C:\\\\Users\\\\mpfernando\\\\IdeaProjects\\\\vibecodee\\\\src\\\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav
 ---------------------------------------------
 
-CHANGE IT TO: 
+CHANGE IT TO: (only two slashes)
 
 src\\\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav
 ---------------------------------------------
