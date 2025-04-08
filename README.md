@@ -26,22 +26,6 @@ See the [deployment.txt](deployment.txt) for installation and setup instructions
 # VIBECODE
 #HOW TO RUN GAME: USE INTELLIJ 
 
-#Make sure the files are in the same folder before running!
-
-ADDITIONAL VERY VERY IMPORTANT NOTE: Please change the names of the files to "src\\\\TheNameOfTheAudioHere"
----------------------------------------------
-FOR EXAMPLE: if you see a file path called:
-
-C:\\\\Users\\\\mpfernando\\\\IdeaProjects\\\\vibecodee\\\\src\\\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav
----------------------------------------------
-
-CHANGE IT TO: (only two slashes)
-
-src\\\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav
----------------------------------------------
-Do this for ALL sound files for it to run. My apologies!
-
-------------------------------------------------------------------------
 HOW TO PLAY GAME:
 1. Run file AdventureGame, after making sure its called AdventureGame.java (ensuring files are in same directory and initalized correctly)
 2. Type ONLY the letter given to choose a choice
