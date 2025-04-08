@@ -44,7 +44,7 @@ public class AdventureGame {
         while (playAgain) {
             boolean hasKey = false;
             System.out.println("You're a student. AT WECIB. You wish your life was less... boring.");
-            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\DokiDoki.wav", true); // Looping background music for school
+            playMusic(src\\DokiDoki.wav", true); // Looping background music for school
             System.out.println("As you pass room 255...");
 
             try {
@@ -65,7 +65,7 @@ public class AdventureGame {
             if (firstChoice.equals("A")) {
                 System.out.println("\nThe note says: 'Are you ready to play, some sort of calamari game? Find a squid then a door.'");
                 System.out.println("What do you do now?");
-                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\funnySquidGameMusic.wav", true); // Music for the second decision
+                playMusic("src\\funnySquidGameMusic.wav", true); // Music for the second decision
                 System.out.println("(C) What... brina fried from class... uhhh Self combust");
                 System.out.println("(D) Some game? Like... a squid, game?");
 
@@ -73,7 +73,7 @@ public class AdventureGame {
 
                 if (secondChoice.equals("C")) {
                     stopCurrentMusic();
-                    playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time lose music
+                    playMusic("src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time lose music
                     System.out.println("\nYou just explode, the explosion causing America to think they got hit by a nuclear blast. Kesha proceeded to hack the news and play her songs. ");
                     System.out.println("**LOSE ENDING: Ignored the call to adventure, thus sending the earth into WW3 and Kesha showing up to play her songs.**");
                 } else if (secondChoice.equals("D")) {
@@ -101,7 +101,7 @@ public class AdventureGame {
                             Thread.currentThread().interrupt();
                         }
                         System.out.println("You notice a loose stone. Do you:");
-                        playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Okay, Everyone! (Natsuki) (Act 2) - Doki Doki Literature Club!.wav", true); // Music for the fourth decision (library)
+                        playMusic("src\\Okay, Everyone! (Natsuki) (Act 2) - Doki Doki Literature Club!.wav", true); // Music for the fourth decision (library)
                         System.out.println("(G) Push the stone, maybe its a squid game reference?");
                         System.out.println("(H) Call for help. Like Undertale?!?!?!?");
 
@@ -121,7 +121,7 @@ public class AdventureGame {
                             hasKey = true;
                             System.out.println("You step back outside.");
                             System.out.println("What now?");
-                            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\funnySquidGameMusic.wav", true); // Music for the fifth decision (after key)
+                            playMusic("src\\funnySquidGameMusic.wav", true); // Music for the fifth decision (after key)
                             System.out.println("(I) Go home with your discovery");
                             System.out.println("(J) Try to find where the key goes");
 
@@ -137,14 +137,14 @@ public class AdventureGame {
                                     Thread.currentThread().interrupt();
                                 }
                                 System.out.println("\nBut nobody came.");
-                                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time neutral music
+                                playMusic("src\\Game Over Yeah!.wav", false); // One-time neutral music
                                 System.out.println("**NEUTRAL ENDING: Is... is that an undertale reference?!?!?!?.**");
                             } else if (fifthChoiceLibrary.equals("J")) {
                                 System.out.println("\nYou wander around the library, looking for a lock that fits the key.");
 
                                 System.out.println("Behind a bookshelf in a quiet corner, you find a small, ornate door.");
                                 if (hasKey) {
-                                    playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Hooray! Sound Effect.wav", false); // One-time win music
+                                    playMusic("src\\Hooray! Sound Effect.wav", false); // One-time win music
                                     System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with a bajillion dollar");
                                     System.out.println("**WIN ENDING: Solved the mystery and found a treasure! MONEY YIPEEEEEE**");
                                 } else {
@@ -157,7 +157,7 @@ public class AdventureGame {
                             }
 
                         } else if (fourthChoiceLibrary.equals("H")) {
-                            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time lose music
+                            playMusic("src\\Game Over Yeah!.wav", false); // One-time lose music
                             System.out.println("\nYou give up and head home, wondering what lay behind the stone.");
                             System.out.println("**LOSE ENDING: Gave up too easily. What a quitter.**");
                         } else {
@@ -183,7 +183,7 @@ public class AdventureGame {
                             Thread.currentThread().interrupt();
                         }
                         System.out.println("You notice a loose stone. Do you:");
-                        playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Bendy-Boing Wonder (Alternate Mix) - Super Mario Bros. Wonder.wav", true); // Music for the fourth decision (alley path)
+                        playMusic("src\\Bendy-Boing Wonder (Alternate Mix) - Super Mario Bros. Wonder.wav", true); // Music for the fourth decision (alley path)
                         System.out.println("(K) Push the stone");
                         System.out.println("(L) Go home, thinking you've found all there is to find like a LOSER.");
 
@@ -194,16 +194,16 @@ public class AdventureGame {
                             System.out.println("\nThe stone clicks! A hidden door opens.");
                             System.out.println("Inside, you see a small, ornate door.");
                             if (hasKey) {
-                                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Hooray! Sound Effect.wav", false); // One-time win music
+                                playMusic("src\\Hooray! Sound Effect.wav", false); // One-time win music
                                 System.out.println("\nYou insert the key. It fits perfectly! The door creaks open, revealing a hidden chamber filled with ancient scrolls.");
                                 System.out.println("**WIN ENDING: Found the key in an unexpected place and solved the mystery! Youve squidded the game!!!**");
                             } else {
-                                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\Game Over Yeah!.wav", false); // One-time lose music
+                                playMusic("src\\Game Over Yeah!.wav", false); // One-time lose music
                                 System.out.println("\nYou try to open the ornate door, but it's locked.");
                                 System.out.println("**LOSE ENDING: Found a secret door but lacked the key. Bro tryna open a door with no key LMAOOOO (insert skull emoji here)**");
                             }
                         } else if (fourthChoiceAlley.equals("L")) {
-                            playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time secret ending music
+                            playMusic("src\\The Skull Gang (Alpha Mix) - Kirby Mass Attack.wav", false); // One-time secret ending music
                             System.out.println("\nYou go home, satisfied with finding the key but unaware of the hidden door, thus finding Kesha and she blasts her music at you, the decibles of music destoying your ears.");
                             System.out.println("**SECRET ENDING: Found a piece of the puzzle but missed the bigger picture, so Kesha punished your ignorance.**");
                         } else {
@@ -218,7 +218,7 @@ public class AdventureGame {
                     System.out.println("Invalid choice.Except this is a super super secret ending and uhhhh, you get blown up into a bagillionmillion pixels uh oh good job lol");
                 }
             } else if (firstChoice.equals("B")) {
-                playMusic("C:\\Users\\mpfernando\\IdeaProjects\\vibecodee\\src\\The Monkeys' Maze (OST Mix) - EarthBound.wav", false); // One-time lose music
+                playMusic("src\\The Monkeys' Maze (OST Mix) - EarthBound.wav", false); // One-time lose music
                 System.out.println("\nYou keep walking home, oblivious to the mystery unfolding nearby.Then, you meet the principal at a Wendys, and get suspended for skipping class..");
                 System.out.println("**LOSE ENDING: Missed the opportunity entirely, and proceeded to have the worst luck possible.**");
             } else {
